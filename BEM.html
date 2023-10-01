@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* BEM Naming Convention */
+    .paragraph {
+      /* Block styling */
+      margin-bottom: 20px;
+    }
+
+    .paragraph__title {
+      /* Element styling */
+      font-size: 1.2em;
+      color: #151fe1;
+    }
+
+    .paragraph--important {
+      /* Modifier styling */
+      font-weight: bold;
+      color: red;
+    }
+
+    .paragraph--highlighted {
+      /* Modifier styling */
+      background-color: yellow;
+    }
+  </style>
+  <title>BEM Example</title>
+</head>
+<body>
+
+  <div class="paragraph">
+    <h2 class="paragraph__title">Paragraph 1</h2>
+    <p>This is a regular paragraph.</p>
+  </div>
+
+  <div class="paragraph paragraph--important">
+    <h2 class="paragraph__title">Important Paragraph</h2>
+    <p>This paragraph is important.</p>
+  </div>
+
+  <div class="paragraph paragraph--highlighted">
+    <h2 class="paragraph__title">Highlighted Paragraph</h2>
+    <p>This paragraph is highlighted.</p>
+  </div>
+  <p>Block (.paragraph): The main container for each paragraph.</p>
+    <p>element (.paragraph__title): The heading inside each paragraph container.</p>
+    <p>Modifier (.paragraph--important and .paragraph--highlighted):</p> 
+   <p>These classes modify the style of the paragraph block. The paragraph--important class indicates an important paragraph, while the paragraph--highlighted class indicates a highlighted paragraph.</p>
+
+</body>
+</html>

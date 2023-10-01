@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Targeting the same element with internal CSS */
+        .container p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <div style="color: red; text-align: center;">
+        <h1>Inline CSS</h1>
+        <p>This is a paragraph with inline CSS.</p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="container">
+        <h1>Internal CSS</h1>
+        <p>This is a paragraph styled with internal CSS.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div class="external-container">
+        <h1>External CSS</h1>
+        <p class="external-paragraph">This is a paragraph styled with external CSS.</p>
+    </div>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Comments can be used to provide additional information -->
+    <!-- For example, this comment explains the purpose of the next div -->
+    <div>
+        <h1>Mixed Styles</h1>
+        <p class="external-paragraph" style="font-style: italic;">This paragraph has mixed styles (inline + external).</p>
+    </div>
+
+    <h5>Inline CSS is applied directly within the HTML tags.</h5>
+    <h5>Internal CSS is placed within the style> tag in the head> section.</h5>
+    <h5>External CSS is stored in a separate styles.css file, linked in the head> section.</h5>
+
+</body>
+</html>
